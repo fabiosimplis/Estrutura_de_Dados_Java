@@ -1,20 +1,20 @@
 package br.com.dio.no;
 
-public class No {
+public class No<T> {
 
-    private String conteudo;
-    private No proximoNo;
+    private T conteudo;
+    private No<T> proximoNo;
 
-    public No (String conteudo){
+    public No (T conteudo){
         this.conteudo = conteudo;
         this.proximoNo = null;
     }
 
-    public String getConteudo() {
+    public Object getConteudo() {
         return conteudo;
     }
 
-    public void setConteudo(String conteudo) {
+    public void setConteudo(T conteudo) {
         this.conteudo = conteudo;
     }
 
