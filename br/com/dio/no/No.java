@@ -10,7 +10,7 @@ public class No<T> {
         this.proximoNo = null;
     }
 
-    public Object getConteudo() {
+    public T getConteudo() {
         return conteudo;
     }
 
@@ -25,9 +25,6 @@ public class No<T> {
     public void setProximoNo(No proximoNo) {
         this.proximoNo = proximoNo;
     }
-
-
-
 
     @Override
     public String toString() {
