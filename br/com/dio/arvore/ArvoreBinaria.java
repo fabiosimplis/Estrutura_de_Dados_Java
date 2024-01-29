@@ -63,7 +63,7 @@ public class ArvoreBinaria <T extends Comparable<T>>{
     private void exibirPreOdem(BinNo<T> atual) {
 
         if(atual != null){
-            System.out.println(atual.getConteudo() + ", ");
+            System.out.print(atual.getConteudo() + ", ");
             exibirPreOdem(atual.getNoEsq());
             exibirPreOdem(atual.getNoDir());
         }
