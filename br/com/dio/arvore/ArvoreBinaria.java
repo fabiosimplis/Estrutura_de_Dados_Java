@@ -19,16 +19,16 @@ public class ArvoreBinaria <T extends Comparable<T>>{
         if (atual == null){
             return novoNo;
         } else if (novoNo.getConteudo().compareTo(atual.getConteudo()) < 0) {
-            atual.setNoEsq(inserir(atual, novoNo));
+            atual.setNoEsq(inserir(atual.getNoEsq(), novoNo));
         } else {
-            atual.setNoDir(inserir(atual, novoNo));
+            atual.setNoDir(inserir(atual.getNoDir(), novoNo));
         }
 
         return atual;
     }
 
     public void exibirInOrder(){
-        System.out.println("\n Exibindo InOrdem");
+        System.out.println("Exibindo InOrdem");
 
         exibirInOrder(this.raiz);
     }
@@ -42,7 +42,7 @@ public class ArvoreBinaria <T extends Comparable<T>>{
     }
 
     public void exibirPosOrdem(){
-        System.out.println("\n Exibindo PosOrdem");
+        System.out.println("Exibindo PosOrdem");
 
         exibirInOrder(this.raiz);
     }
@@ -56,7 +56,7 @@ public class ArvoreBinaria <T extends Comparable<T>>{
     }
 
     public void exibirPreOrdem(){
-        System.out.print("\n Exibindo PreOrdem");
+        System.out.print("Exibindo PreOrdem");
 
         exibirInOrder(this.raiz);
     }
